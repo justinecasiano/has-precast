@@ -1,0 +1,48 @@
+@keyframes slideLeft {
+  to {
+    transform: translateX(-101%);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes preload {
+  to {
+    height: auto;
+    overflow: auto;
+  }
+}
+
+@keyframes load {
+  10% {
+    transform: translateX(1%);
+  }
+
+  45% {
+    transform: translateX(100%);
+  }
+
+  99% {
+    transform: translateX(101%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
