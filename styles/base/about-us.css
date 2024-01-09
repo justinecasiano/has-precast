@@ -4,7 +4,7 @@ h1, p{
 }
 
 .about-us-hero-section {
-  background-image: url('/images/about-us/about-us-hero.png');
+  background-image: url('/images/about-us/about-us-hero.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,7 +71,7 @@ h1, p{
 }
 
 .mission-vision {
-  background-image: url('/images/about-us/mission-vision-img.png');
+  background-image: url('/images/about-us/mission-vision-img.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

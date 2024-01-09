@@ -1,6 +1,10 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .landingpagewall {
 	height: 120vh;
-	background-image: url('/images/wall-form-blocks/image 58.png');
+	background-image: url('/images/wall-form-blocks/image 58.webp');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -38,18 +42,15 @@
 
 .buttonwall {
 	width: 17%;
-	height: 6vh;
 	background: linear-gradient(90deg, var(--clr-accent) 0%, rgba(248, 7, 89, 0.70) 100%);
 	text-align: center;
-	padding-top: 0.5em;
+	padding-block: 0.5em;
 	margin-left: 4em;
 	transform: translateY(-100%);
 }
 
 .buttonwall:hover {
 	background: linear-gradient(360deg, #FFF 0%, rgba(248, 7, 89, 0.70) 100%);
-
-
 }
 
 .buttonwall span:hover {
@@ -72,18 +73,17 @@
 
 .contents {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	margin: auto;
 	padding-left: 0;
 	padding-right: 0;
-	background: linear-gradient(180deg, var(--clr-primary-shade)0%, #FAFAFA 47.4%, #FAFAFA 100%);
+	background: linear-gradient(var(--clr-primary-shade), var(--clr-primary));
 
 }
 
 .headd {
-	color: var(--secondary);
+	color: var(--clr-secondary);
 	text-align: center;
-	font-family: Inknut Antiqua;
 
 	font-size: var(--fs-title);
 	font-style: normal;
@@ -140,6 +140,7 @@ a:has(> .circle) {
 	width: 100%;
 	height: 150vh;
 	padding-top: 1em;
+	background: linear-gradient(var(--clr-primary-shade), var(--clr-primary));
 }
 
 .highlight {
@@ -420,6 +421,7 @@ a:has(> .circle) {
 }
 
 #advantages {
+	padding-block: 5em;
 	height: auto;
 }
 
@@ -437,8 +439,8 @@ a:has(> .circle) {
 	max-width: 950px;
 	width: 100%;
 	overflow: hidden;
-	padding: 80px 0;
-	margin-left: 12em;
+	padding: 2em 0;
+	margin: 0 auto;
 }
 
 .container .main-card {
@@ -480,7 +482,7 @@ a:has(> .circle) {
 .main-card .cards .card {
 	height: 50vh;
 	width: calc(100% / 3 - 1rem);
-	background: #fff;
+	background: var(--clr-primary-shade);
 	border-radius: 1em;
 	padding: 0;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
@@ -527,7 +529,7 @@ a:has(> .circle) {
 	--fs-default: calc(120%);
 	font-size: var(--fs-default);
 	font-weight: 500;
-	color: var(--clr-primary);
+	color: #FAFAFA;
 	text-align: center;
 	font-family: var(--ff-default);
 	font-style: normal;
@@ -538,12 +540,12 @@ a:has(> .circle) {
 
 .container .carousel-button {
 	width: 100%;
-	height: 5vh;
 	display: flex;
 	justify-content: center;
+	margin-top: 10%;
 }
 
-.container .button label {
+.container .carousel-button label {
 	width: 100%;
 	height: 1em;
 	width: 1em;
@@ -552,28 +554,28 @@ a:has(> .circle) {
 	margin: 0 4px;
 	cursor: pointer;
 	transition: all 0.5s ease;
-	border: 2px solid red;
+	border: 2px solid var(--clr-accent);
 }
 
 
-.container .button label:not(.active) {
+.container .carousel-button label:not(.active) {
 	background: #fff;
 	border-radius: 20px;
-	border: 2px solid red;
+	border: 2px solid var(--clr-accent);
 }
 
 
-.button label.active {
+.carousel-button label.active {
 	width: 35px;
-	background: red;
+	background: var(--clr-accent);
 	border: none;
 }
 
 
 
 
-.button label.one,
-.button label.two {
+.carousel-button label.one,
+.carousel-button label.two {
 	height: 15px;
 	width: 15px;
 	border-radius: 20px;
@@ -581,49 +583,49 @@ a:has(> .circle) {
 	margin: 0 4px;
 	cursor: pointer;
 	transition: all 0.5s ease;
-	border: 2px solid red;
+	border: 2px solid var(--clr-accent);
 }
 
 
-.button label.one:not(.active),
-.button label.two:not(.active) {
+.carousel-button label.one:not(.active),
+.carousel-button label.two:not(.active) {
 	background: #fff;
 	border-radius: 20px;
-	border: 2px solid red;
+	border: 2px solid var(--clr-accent);
 }
 
 
-#one:checked~.button .one,
-#two:checked~.button .two {
+#one:checked~.carousel-button .one,
+#two:checked~.carousel-button .two {
 	width: 35px;
-	background: red;
+	background: var(--clr-accent);
 	border: none;
 }
 
-#three:checked~.button .three,
-#four:checked~.button .four,
-#five:checked~.button .five,
-#six:checked~.button .six {
+#three:checked~.carousel-button .three,
+#four:checked~.carousel-button .four,
+#five:checked~.carousel-button .five,
+#six:checked~.carousel-button .six {
 	width: 35px;
 }
 
 
-.button label.three:not(.active),
-.button label.four:not(.active),
-.button label.five:not(.active),
-.button label.six:not(.active) {
+.carousel-button label.three:not(.active),
+.carousel-button label.four:not(.active),
+.carousel-button label.five:not(.active),
+.carousel-button label.six:not(.active) {
 	background: #fff;
 	border-radius: 20px;
-	border: 2px solid red;
+	border: 2px solid var(--clr-accent);
 }
 
 
-#three:checked~.button .three,
-#four:checked~.button .four,
-#five:checked~.button .five,
-#six:checked~.button .six {
+#three:checked~.carousel-button .three,
+#four:checked~.carousel-button .four,
+#five:checked~.carousel-button .five,
+#six:checked~.carousel-button .six {
 	width: 35px;
-	background: red;
+	background: var(--clr-accent);
 	border: none;
 }
 
