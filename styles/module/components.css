@@ -41,7 +41,10 @@
 
 .button {
   overflow: hidden;
-  border: solid 3px var(--clr-secondary);
+  
+  display: inline-block;
+
+  position: relative;
 }
 
 .button a {
@@ -53,6 +56,7 @@
   padding: 0.3em;
   color: var(--clr-secondary-shade);
   font: bold var(--fs-subtitle) var(--ff-default);
+  border: solid 3px var(--clr-secondary);
 
   transition: transform 0.5s ease;
 }
@@ -60,6 +64,7 @@
 .button .down {
   color: #FAFAFA;
   background: var(--clr-accent);
+  border-color: var(--clr-accent);
 
   position: absolute;
   inset: 100% auto auto 0;

@@ -28,10 +28,10 @@ html {
 }
 
 .wrapper {
-  /* height: 100vh;
+  height: 100vh;
   overflow: hidden;
 
-  animation: preload 0.1s ease 3.4s forwards; */
+  animation: preload 0.1s ease 3.4s forwards;
 }
 
 svg,
@@ -52,7 +52,7 @@ header {
   align-items: center;
 
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 
 header .logo-container {
@@ -109,7 +109,7 @@ header .navbar-links li a:hover+.highlight-wrapper .highlight {
 
   position: absolute;
   animation: slideLeft 0.1s ease 3.8s forwards;
-  z-index: 3;
+  z-index: 4;
 }
 
 .preloader {
@@ -218,6 +218,9 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  position: relative;
+  z-index: 1;
 }
 
 footer .col-1 {
